@@ -1,94 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Student Project</title>
-</head>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
 
 <body>
+    <header>
+        <h1>Zainab Hirani</h1>
+        <p>Web Developer</p>
+        <nav>
+            <a href="#Home">Home</a> 
+            <a href="#About">About</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+  <div class="profile-card">
+       <img class="profile-img" src="images/profile.jpg" alt="Profile Picture">
+       <h2>Zainab Hirani</h2>
+       <p>Beginner Web Developer learning HTML, CSS, and JavaScript.</p>
+       </div>
+       
+       <section id="Skills">
+       <h2>My Skills</h2>
 
-    <!-- Main heading -->
-    <h1>Student Information Page</h1>
+       <ul>
+           <li>HTML</li>
+           <li>CSS</li>
+           <li>JavaScript</li>
+           <li>Git</li>
+       </ul>
+       </section>
+       <section class="image-section">
+       <h2>My Work</h2>
+       
+       <img src="images/project1.png" alt="My First Project">
+       <img src="images/project2.png" alt="My Second Project">
+       </section>
 
-    <!-- Student introduction -->
-    <h2>About the Student</h2>
-    <p>Welcome to my student webpage. This page shows my courses, results, and contact form.</p>
+       <section class="projects">
+        <h2>My Projects</h2>
 
-    <!-- Student image -->
-    <h3>Student Photo</h3>
-    <img src="images/student.jpg" alt="Student photo" width="250">
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Technology</th>
+                <th>Status </th>
+            </tr>
+            <tr>
+                <td>Personal Portfolio</td>
+                <td>HTML, CSS, JavaScript</td>
+                <td>In Progress</td>
+            </tr>
+            <tr>
+                <td>Student Website</td>
+                <td>HTML</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>JavaScript Project</td>
+                <td>JavaScript</td>
+                <td>Coming Soon</td>
+            </tr>
+        </table>
 
-    <!-- Courses section -->
-    <h2>My Courses</h2>
+       </section>
+       <section id="Contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <ul>
-        <li>Web Development</li>
-        <li>Java Programming</li>
-        <li>Database Management</li>
-        <li>Software Engineering</li>
-    </ul>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <!-- Student results table -->
-    <h2>Student Results</h2>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-    <table border="1">
-        <tr>
-            <th>Course</th>
-            <th>Grade</th>
-            <th>Result</th>
-        </tr>
-
-        <tr>
-            <td>Web Development</td>
-            <td>85%</td>
-            <td>Pass</td>
-        </tr>
-
-        <tr>
-            <td>Java Programming</td>
-            <td>80%</td>
-            <td>Pass</td>
-        </tr>
-
-        <tr>
-            <td>Database Management</td>
-            <td>88%</td>
-            <td>Pass</td>
-        </tr>
-    </table>
-
-    <!-- Contact form -->
-    <h2>Student Form</h2>
-
-    <form>
-
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-
-        <br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-
-        <br><br>
-
-        <label for="course">Course:</label>
-        <input type="text" id="course" name="course">
-
-        <br><br>
-
-        <label for="message">Message:</label>
-        <br>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea>
-
-        <br><br>
-
-        <!-- Submit button -->
-        <input type="submit" value="Submit">
-
-    </form>
+            <button type="submit">Send</button>
+        </form>
 
 </body>
-
 </html>
